@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+
+{% block navbar %}
+ 
+{% include 'navstatic.html' %}
+
+{% endblock %}
+
+{% block messages %}
+<div class="container">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Η Επικοινωνία μας</h1>
+        <p>Αν αυτό που θέλετε είναι να μαθετε περισσοτερα ή να μας ρωτήσετε για τις υπηρεσίας μας,
+        εδώ είναι η φόρμα επικοινωνίας μας.</p>
+        <p>Μη δισταζετε να ρωτησετε για τις προσφορές μας.</p>
+        <p>Συμπληρωστε τα στοιχεία σας και θα επικοινωνησουμε αμεσα μαζί σας.</p>
+      </div>
+      
+<form class="form-horizontal" role="form" method="post"> {% csrf_token %}
+{{ form.non_field_errors }}
+  <div class="form-group">
+    
+    <div class="col-sm-10">
+       {{ form.sender.errors }}
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+<div class="form-group">
+    
+    <div class="col-sm-10">
+      <input type="text" class="form-control" placeholder="Text input">
+    </div>
+  </div>
+  <div class="form-group">
+    
+    <div class="col-sm-10">
+      <textarea class="form-control" rows="3"></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> CC
+        </label>
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+</form>
+</div>
+
+{% endblock %}

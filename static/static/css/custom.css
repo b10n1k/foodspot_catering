@@ -1,0 +1,14 @@
+body { 
+    padding-bottom: 50px !important;
+    overflow: scroll;
+}
+
+.jumbotron {
+    background-color: #1701FF;
+}
+
+cus {
+    position: absolute;
+    margin-bottom: 0%;
+    clear: both;
+}

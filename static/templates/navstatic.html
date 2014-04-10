@@ -1,0 +1,37 @@
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="{% url "catering:home" %}">Home</a></li>
+            <li><a href="{% url "catering:about" %}">About</a></li>
+            <li><a href='{% url "catering:contact" %}'>Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="{% url "catering:services" %}">Catering</a></li>
+                <li><a href="{% url "catering:specials" %}">Special Offers</a></li>
+                <li><a href="{% url "catering:cataloge" %}">Cataloge</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Our Work</li>
+                <li><a href="{% url "pl-photologue-root" %}">Our Gallery</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- 
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li class="active"><a href="./">Static top</a></li>
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+          </ul>
+          -->
+        </div><!--/.nav-collapse -->

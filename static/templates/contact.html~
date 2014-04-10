@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% include 'navbar.html' %}
+
+{% block messages %}
+<p>This is the about us</p>
+{% endblock %}b

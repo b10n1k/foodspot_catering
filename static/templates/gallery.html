@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block navbar %}
+ 
+{% include 'navstatic.html' %}
+
+{% endblock %}
+
+{% block messages %}
+
+{% load gallery_tags %}
+{% gallery_category 1 %}
+{% gallery_image 1 %}
+dddddddddddddddddddddddddddddd
+{% endblock %}b

@@ -1,0 +1,7 @@
+.jumbotron {
+    background-color: #1701FF;
+}
+
+.success {
+    background-color: #1701FF;
+}
